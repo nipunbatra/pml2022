@@ -6,4 +6,6 @@
 - Deep GPs for air quality
 - Bayesian Neural Nets for air quality
 - Active learning for energy disaggregation
+- Bayesian air quality forecasting
+- 
 
