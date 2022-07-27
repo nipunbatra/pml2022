@@ -1,0 +1,3 @@
+- [Implement Bayesian Unlearning](https://arxiv.org/pdf/2207.03227.pdf)
+- Bayesian Neural Network Pruning:Study the accuracy and calibration of pruned BNN models. 
+- Stein VI: https://arxiv.org/abs/1608.04471
