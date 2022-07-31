@@ -7,5 +7,7 @@
 - Bayesian Neural Nets for air quality
 - Active learning for energy disaggregation
 - Bayesian air quality forecasting
-- 
-
+- How good is Automatic Differentiation Laplace Approximation (Laplace Approximation with change of variables)?
+- How good is Low-rank VI approximation? check on standard UCI datasets using [bijax](https://github.com/patel-zeel/bijax) or self-code.
+- [Conditional neural processes](https://arxiv.org/pdf/1807.01613.pdf) for energy disaggregation
+- [Conditional neural processes](https://arxiv.org/pdf/1807.01613.pdf) for air quality
