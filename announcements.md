@@ -1,13 +1,11 @@
 ---
 layout: page
-title: Announcements
-nav_exclude: true
-description: A feed containing all of the class announcements.
+title: Assignments
+nav_exclude: false
+description: A feed containing all of the class assignments.
 ---
 
-# Announcements
-
-Announcements are stored in the `_announcements` directory and rendered according to the layout file, `_layouts/announcement.html`.
+# Assignments
 
 {% assign announcements = site.announcements | reverse %}
 {% for announcement in announcements %}

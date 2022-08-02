@@ -4,20 +4,28 @@ title: Introduction to Probabilistic Machine Learning
 
 Aug 2
 : [Bayes Rule and Course Logistics](#)
-  : [1.1](#)
+  : [Slides](#)
 
-Sep 29
-: **Section**{: .label .label-purple }[Intro to Java](#)
-  : [Solution](#)
+Aug 5
+: **Lab**{: .label .label-purple } [Distributions in TFP/Coin Toss MLE](#)
 
-Sep 30
-: [Variables & Objects](#)
-  : [1.2](#), [2.1](#)
+Aug 
+: [Linear Regression and Logistic Regression MLE](#)
+  : [Slides](#)
 
-Oct 1
-: **Lab**{: .label .label-purple } [Intro to Java](#)
+Aug 
+: [Coin Toss and Linear Regression MAP](#)
+  : [Slides](#)
 
-Oct 2
-: [Tracing, IntLists, & Recursion](#)
-  : [2.1](#)
-: **HW 1 due**{: .label .label-red }
+Aug
+: [Bayesian Linear Regression](#)
+  : [Slides](#)
+
+Aug
+: [Laplace Approximation for Logistic Regression](#)
+  : [Slides](#)
+
+
+
+
+

@@ -1,9 +1,3 @@
----
-title: Week 0 Announcement
-week: 0
-date: 2019-04-01
----
-
 1. Optimise the following function using JAX autograd
 
 $f(\theta) - [2 3]^T$
