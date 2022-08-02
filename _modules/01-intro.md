@@ -19,6 +19,7 @@ Aug
   : [Slides](#)
 
 Aug
+: **Quiz 1**{: .label .label-green } 
 : [Bayesian Linear Regression](#)
   : [Slides](#)
 
