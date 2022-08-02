@@ -3,9 +3,9 @@ title: Introduction to Probabilistic Machine Learning
 ---
 
 Aug 2
-: [Bayes Rule and Course Logistics]()
-  : [Slides](../slides/01-bayesian1.pdf)
-  : [Notebook](../notebooks/iid.ipynb)
+: Bayes Rule and Course Logistics
+  : [[Slides](../slides/01-bayesian1.pdf)]
+  : [[Notebook](../notebooks/iid.ipynb)]
 
 Aug 5
 : **Lab**{: .label .label-purple } [Distributions in TFP/Coin Toss MLE](#)
