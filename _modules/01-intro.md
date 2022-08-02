@@ -21,9 +21,6 @@ Aug
 : [Bayesian Linear Regression](#)
   : [Slides](#)
 
-Aug
-: [Laplace Approximation for Logistic Regression](#)
-  : [Slides](#)
 
 
 

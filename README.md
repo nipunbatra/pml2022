@@ -63,4 +63,5 @@ u7jjtu2
 
 - Assignments: 20%
 - Quizzes: 20%
+    - Quiz syllabus will be everything from previous quiz to present day
 - Projects: 60%
