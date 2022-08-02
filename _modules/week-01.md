@@ -1,9 +1,9 @@
 ---
-title: Introduction to Java
+title: Introduction to Probabilistic Machine Learning
 ---
 
-Sep 28
-: [Java & Git](#)
+Aug 2
+: [Bayes Rule and Course Logistics](#)
   : [1.1](#)
 
 Sep 29
