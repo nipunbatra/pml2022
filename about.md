@@ -16,19 +16,26 @@ description: >-
 
 ---
 
-## About
 
-Course contents:
+## Google Classroom Link
+u7jjtu2
+
+## Prerequisites
+- Mathematics for ML: Recommended reading is [MML book](https://mml-book.github.io)
+- A prior ML course: ES654 course at IIT Gandhinagar or equivalent
+- Good programming skills in Python. Familiarity with: numpy, Pandas, matplotlib, sklearn. Recommended reading is [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
+
+## Course contents:
 
 - Probability refresher: Probability theory, discrete distributions, continuous distributions, joint probability distributions, sampling from different distributions (e.g. using Box-Muller transform), uncertainty modelling, information theoretic concepts: (KL-divergence, entropy)
 - Bayesian concept learning: Likelihood, Prior, Posterior, Maximum Likelihood Estimate (MLE), Maximum A-Posteriori estimation (MAP), Full Bayesian Estimation with Conjugate Priors (Beta-Bernoulli model for the coin toss example, Normal-Normal model for estimating parameters of Normal distribution)
 - Bayesian supervised methods: 
-- - Regression: Bayesian linear regression, Robust linear regression via alternative likelihood (e.g. Laplace, Student-T)
-- - Classification: Bayesian Logistic regression, Bayesian Naive Bayes
+    - Regression: Bayesian linear regression, Robust linear regression via alternative likelihood (e.g. Laplace, Student-T)
+    - Classification: Bayesian Logistic regression, Bayesian Naive Bayes
 - Latent Variable modelling: Gaussian Mixture Model, Probabilistic principal component analysis (PPCA)
 - Approximate Inference:
-- - Sampling based strategies: Rejection sampling, Importance sampling, Markov Chain Monte Carlo (MCMC), Metropolis Hastings, Gibbs sampling, No U-Turn sampler (NUTS)
-- - Variational inference: Mean field approach, Evidence Lower Bound (ELBO), Reparameterization trick, Stochastic Variational Inference, Automatic Differentiation Variational Inference (ADVI)
+    - Sampling based strategies: Rejection sampling, Importance sampling, Markov Chain Monte Carlo (MCMC), Metropolis Hastings, Gibbs sampling, No U-Turn sampler (NUTS)
+    - Variational inference: Mean field approach, Evidence Lower Bound (ELBO), Reparameterization trick, Stochastic Variational Inference, Automatic Differentiation Variational Inference (ADVI)
 - Gaussian Processes (GP): Multivariate Normal distribution and its properties, Kernels, GP regression, GP classification, Approximate Inference and Sparse GPs
 - Bayesian Optimization (BO) and Active Learning (AL): AL - Query by committee, Uncertainty sampling, Expected model change, BO - Acquisition functions, GP based BO, Random Forests based BO
 - Probabilistic Deep Learning: MC Dropout, Deep Ensembles, Bayesian neural networks (BNNs), Deep GPs
