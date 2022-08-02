@@ -1,11 +1,11 @@
 ---
 layout: home
-title: Just the Class
+title: Probabilistic ML course 
 nav_exclude: true
 permalink: index.html
 seo:
   type: Course
-  name: Just the Class
+  name: Probabilistic ML course 
 ---
 
 # Probabilistic ML course 
