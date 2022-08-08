@@ -5,17 +5,20 @@ title: Introduction to Probabilistic Machine Learning
 Aug 2
 : Bayes Rule and Course Logistics
   : [[Slides](../slides/01-bayesian1.pdf)]
-  : [[Notebook](../notebooks/iid.ipynb)]
+  : [[Notebook](https://github.com/nipunbatra/pml2022/blob/main/notebooks/iid.ipynb)]
 
 Aug 5
-: **Lab**{: .label .label-purple } [Distributions in TFP/Coin Toss MLE](#)
+: **Lab**{: .label .label-purple } [Distributions in TFP/Coin Toss MLE]
+  : [[Notebook](https://colab.research.google.com/drive/1GGH6TuoF-KkNp5OH4DOhoJvu_9OBd0At)]
 
-Aug 
-: **Assignment 1 Due**{: .label .label-red } 
+Aug 10
+: **Assignment 1 Due**{: .label .label-red }
+
+Aug 11
 : [Linear Regression and Logistic Regression MLE](#)
   : [Slides](#)
 
-Aug 
+Aug 12
 : [Coin Toss and Linear Regression MAP](#)
   : [Slides](#)
 
