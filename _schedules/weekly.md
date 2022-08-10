@@ -21,18 +21,18 @@ timeline:
 schedule:
   - name: Monday
   - name: Tuesday
-    events:
-      - name: Lecture
-        start: 2:00 PM
-        end: 3:30 PM
-        location: 5/202
   - name: Wednesday
   - name: Thursday
+   events:
+      - name: Lecture
+        start: 12:00 PM
+        end: 1:30 PM
+        location: 7/102
   - name: Friday
     events:
       - name: Lecture
         start: 2:00 PM
         end: 3:30 PM
-        location: 5/202
+        location: 7/105
 
 ---
