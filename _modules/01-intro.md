@@ -15,12 +15,16 @@ Aug 10
 : **Assignment 1 Due**{: .label .label-red }
 
 Aug 11
-: Linear Regression MLE]
+: Linear Regression MLE
   : [Slides](../slides/MLE.pdf)
 
 Aug 12
 : [Logistic Regression MLE, Coin Toss and Linear Regression MAP](#)
   : [Slides](#)
+
+Aug 18
+: [MAP]
+  : [Slides](../slides/map.pdf)
 
 Aug
 : **Quiz 1**{: .label .label-green } 
