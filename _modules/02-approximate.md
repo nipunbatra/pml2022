@@ -3,8 +3,8 @@ title: Approximate Inference
 ---
 
 Aug
-: [Laplace Approximation for Logistic Regression](#)
-  : [Slides](#)
+: Laplace Approximation
+  : [Slides](../slides/Laplace.pdf)
 
 Aug
 : [Grid approximation for Coin Toss](#)

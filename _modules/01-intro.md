@@ -33,10 +33,6 @@ Aug 20
 Aug 23
 : **Assignment 2 Due by 5 pm**{: .label .label-red }
 
-Aug
-: **Quiz 1**{: .label .label-green } 
-: [Bayesian Linear Regression](#)
-  : [Slides](#)
 
 
 
