@@ -18,6 +18,9 @@ seo:
 
 ---
 
+## Class Timings
+Thursday, 12 PM to 1:30 PM, 7-102
+Friday, 2 PM to 3:30 PM, 7-105
 
 ## Google Classroom Link
 u7jjtu2

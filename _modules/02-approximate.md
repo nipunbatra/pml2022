@@ -2,19 +2,22 @@
 title: Approximate Inference
 ---
 
-Aug
+Aug 25
 : Laplace Approximation
-  : [Slides](../slides/Laplace.pdf)
+  : [Notes](../slides/Laplace.pdf)[Slides](../slides/laplace-class.pdf)
 
-Aug
-: [Grid approximation for Coin Toss](#)
-  : [Slides](#)
+Sep 1
+: Monte Carlo Sampling
+  : [Notes](../slides/monte-carlo-notes.pdf)[Slides](../slides/monte.pdf)
 
-Aug
-: [Rejection sampling](#)
-  : [Slides](#)
+Sep 2
+: **Quiz 1**{: .label .label-red }
+: Monte Carlo Sampling Continued
 
-Aug
+Sep 3
+: Rejection sampling
+
+Sep 
 : [MCMC - I: Metropolis Hastings](#)
   : [Slides](#)
 
