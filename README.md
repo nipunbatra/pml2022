@@ -68,3 +68,12 @@ u7jjtu2
 - Quizzes: 20%
     - Quiz syllabus will be everything from previous quiz to present day
 - Projects: 60%
+
+## Useful YT channels/Playlists
+
+- https://www.youtube.com/user/mathematicalmonk
+- https://www.youtube.com/c/MutualInformation0
+- https://www.youtube.com/c/ritvikmath
+- https://www.youtube.com/c/MachineLearningSimulation
+- https://www.youtube.com/watch?v=UbaVGD4Lfis&list=PL05umP7R6ij1tHaOFY96m5uX3J21a6yNd
+- https://www.youtube.com/watch?v=BYUykHScxj8&list=PLDcUM9US4XdMROZ57-OIRtIK0aOynbgZN
