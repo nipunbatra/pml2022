@@ -20,7 +20,7 @@ Sep 3
 
 Sep 
 : [MCMC - I: Metropolis Hastings](#)
-  : [Slides](#)
+  : [Notebook](https://colab.research.google.com/github/nipunbatra/pml2022/blob/main/notebooks/MCMC_Sampling_RMH_algorithm.ipynb)
 
 Aug
 : [Variational Inference](#)
