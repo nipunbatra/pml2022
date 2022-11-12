@@ -2,10 +2,10 @@
 title: Active learning
 ---
 
-Aug
+Oct
 : [Active Learning](#)
   : [Slides](#)
 
-Aug
-: [Bayesian Optimisation](#)
-  : [Slides](#)
+Nov
+: Bayesian Optimisation
+  : [Notebook](https://github.com/nipunbatra/pml2022/blob/main/notebooks/Bayesian-Optimization.ipynb)
