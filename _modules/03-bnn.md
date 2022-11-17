@@ -4,7 +4,7 @@ title: Bayesian Neural Networks
 
 Aug
 : [MC Dropout, Deep Ensemble](#)
-  : [Slides](#)
+  : [Notebook](https://github.com/nipunbatra/pml2022/blob/main/notebooks/BNN.ipynb)
 
 Aug
 : [VI, MCMC](#)
