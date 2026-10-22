@@ -6,7 +6,7 @@ Course website for Probabilistic Machine Learning at IIT Gandhinagar, Semester I
 The site is a [Quarto](https://quarto.org) website in the same design as
 [ES 667 Deep Learning](https://nipunbatra.github.io/dl-2026/). GitHub Pages serves the `main` branch as it is, so
 the site renders in place: every page's `.html` is committed next to its `.qmd`, and `.nojekyll` turns Jekyll off.
-After editing a page, run `rm -f robots.txt && quarto render` (Quarto will not copy the generated `robots.txt` onto itself) and commit the result.
+After editing a page, run `quarto render` and commit the result.
 
 | File | Contents |
 |---|---|

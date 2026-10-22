@@ -22,7 +22,6 @@ website:
   title: "CS 691 · Probabilistic Machine Learning 2022"
   favicon: favicon.svg
   description: "Probabilistic Machine Learning at IIT Gandhinagar, August–November 2022"
-  site-url: https://nipunbatra.github.io/pml2022/
   search: false
 
 format:
