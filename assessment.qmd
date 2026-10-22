@@ -1,0 +1,48 @@
+---
+title: "Assessment"
+body-classes: dl wide
+---
+
+```{=html}
+<p class="lede">Grading and every dated event of the August–November 2022 offering in one place. The project carries the most weight; assignments are programming tasks done in pairs.</p>
+```
+
+::: {.two .rule-top}
+
+## Dates {#deadlines}
+
+{{< include _dates.qmd >}}
+
+## Grading {#grading}
+
+```{=html}
+<table class="t" data-quarto-disable-processing="true">
+<thead><tr><th>Component</th><th>Weight</th><th>How</th></tr></thead>
+<tbody>
+<tr><th>Project</th><td class="big">60%</td><td>See the <a href="projects/index.html">project ideas</a>.</td></tr>
+<tr><th>Assignments</th><td class="big">20%</td><td>Four programming assignments, each a single Jupyter notebook done in a group of two.</td></tr>
+<tr><th>Quizzes</th><td class="big">20%</td><td>Each quiz covers everything from the previous quiz up to the day of the quiz.</td></tr>
+<tr><th>Total</th><td class="big">100%</td><td></td></tr>
+</tbody></table>
+```
+
+:::
+
+::: {.rule-top}
+
+## Assignments {#assignments}
+
+```{=html}
+<table class="t" data-quarto-disable-processing="true">
+<thead><tr><th>Assignment</th><th>Topic</th><th>Marks</th><th>Due</th></tr></thead>
+<tbody>
+<tr><td><a href="assignments/1.html">Assignment 1</a></td><td>Gradient descent with JAX; maximum likelihood for Normal, Student-t and exponential distributions</td><td>5</td><td style="white-space:nowrap">10 Aug, 6:00 pm</td></tr>
+<tr><td><a href="assignments/2.html">Assignment 2</a></td><td>MLE and MAP for linear and logistic regression; Normal, Laplace and Student-t choices</td><td>6</td><td style="white-space:nowrap">23 Aug, 6:00 pm</td></tr>
+<tr><td><a href="assignments/3.html">Assignment 3</a></td><td>Laplace approximation, Monte Carlo and probit approximation for logistic regression</td><td>4</td><td style="white-space:nowrap">15 Sep, 6:00 pm</td></tr>
+<tr><td><a href="assignments/4.html">Assignment 4</a></td><td>CNNs with MC dropout in Flax; Gaussian processes on the Mauna Loa CO<sub>2</sub> data</td><td>5</td><td style="white-space:nowrap">27 Oct, 6:00 pm</td></tr>
+</tbody></table>
+```
+
+The common rules are on the [Assignments](assignments/index.html) page.
+
+:::

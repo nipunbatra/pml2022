@@ -1,0 +1,22 @@
+---
+title: "Projects"
+---
+
+```{=html}
+<p class="lede">Project ideas for the course. The project is worth 60% of the grade.</p>
+```
+
+- [Implement Bayesian unlearning](https://arxiv.org/pdf/2207.03227.pdf)
+- Bayesian neural network pruning: study the accuracy and calibration of pruned BNN models
+- [Implement Stein variational inference](https://arxiv.org/abs/1608.04471) in JAX
+- [Automatic kernel combinations](https://peterroelants.github.io/posts/gaussian-process-kernels/) for GPs
+- [Deep GPs](http://inverseprobability.com/talks/notes/deep-gaussian-processes.html) for energy disaggregation
+- Deep GPs for air quality
+- Bayesian neural networks for air quality
+- Active learning for energy disaggregation
+- Bayesian air-quality forecasting
+- Implement techniques from the [Laplace Redux paper](https://github.com/AlexImmer/Laplace) in [BiJAX](https://github.com/patel-zeel/bijax)
+- How good is the automatic differentiation Laplace approximation (the Laplace approximation with a change of variables)?
+- How good is a low-rank VI approximation? Check on standard UCI datasets using [BiJAX](https://github.com/patel-zeel/bijax) or your own code.
+- [Conditional neural processes](https://arxiv.org/pdf/1807.01613.pdf) for energy disaggregation
+- [Conditional neural processes](https://arxiv.org/pdf/1807.01613.pdf) for air quality

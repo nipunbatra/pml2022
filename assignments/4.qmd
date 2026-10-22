@@ -1,0 +1,24 @@
+---
+title: "Assignment 4"
+---
+
+```{=html}
+<p class="lede">Due 27 October 2022, 6:00 pm · 5 marks. <a href="index.html">All assignments</a></p>
+```
+
+## Instructions
+1. Total marks: 5
+2. Use TensorFlow Probability (TFP) with the JAX substrate for distributions
+3. Use JAX for autograd functionality and vector programming
+4. The assignment has to be done in groups of two
+5. The assignment should be a single Jupyter notebook.
+6. It is important that you are able to get insights from your results and not just present answers. As an example – if the question asks you to try a different likelihood, then you should be able to observe how this likelihood compares to the default likelihood.
+
+## Questions
+For all of the following questions, please consider binary classification as the model.
+
+1. Use a subset of 5,000 images (500 images per class) from MNIST dataset and train a simple (deterministic)CNN model in Flax. Report the predicted accuracy on a separately kept 1,000 images test set (100 images per class). Also, report the predicted probabilities for wrongly classified examples. What can you conclude? Now, use the trained model on a set of 1,000 images on Fashion MNIST dataset. What can you conclude? [1.5 marks]
+
+2. Modify the above CNN to include MC dropout as way to get uncertainty from the final dense layer. Rerun above experiments and report conclusions. [2 marks]
+
+3. Use a GP library of your choice and kernel of your choice to fit a GP to [monthly CO₂ data from Mauna Loa](https://gml.noaa.gov/ccgg/trends/data.html). Compare the prediction with a neural network that uses MC Dropout to obtain uncertainty. [1.5 marks]

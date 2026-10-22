@@ -1,0 +1,115 @@
+---
+pagetitle: "CS 691 · Probabilistic Machine Learning 2022"
+description: "Probabilistic Machine Learning at IIT Gandhinagar, Semester I 2022–23"
+body-classes: dl wide
+---
+
+::: {.top}
+
+::: {.top-main}
+```{=html}
+<span hidden></span><!-- keeps Quarto from moving the h1 into its own title block -->
+<h1 class="h1">Probabilistic Machine Learning</h1>
+<p class="role">CS 691 · IIT Gandhinagar · Semester I, 2022–23</p>
+<p class="lede" style="margin-top:18px">This course treats machine learning as inference under uncertainty. It moves from Bayes' rule, maximum likelihood and MAP estimation through approximate inference (Laplace, Monte Carlo, MCMC and variational methods) to Bayesian neural networks, Gaussian processes, latent-variable models, active learning, Bayesian optimisation and diffusion models. Assignments are written in JAX with TensorFlow Probability, and a project carries most of the grade.</p>
+<dl class="facts">
+  <dt>Instructor</dt><dd><a href="https://nipunbatra.github.io">Prof. Nipun Batra</a></dd>
+  <dt>Email</dt><dd><a href="mailto:nipun.batra@iitgn.ac.in">nipun.batra@iitgn.ac.in</a></dd>
+  <dt>Classes</dt><dd>Thursday, 12:00–1:30 pm, 7/102; Friday, 2:00–3:30 pm, 7/105</dd>
+  <dt>Google Classroom</dt><dd>Class code <code>u7jjtu2</code></dd>
+  <dt>Teaching assistant</dt><dd><a href="#people">Zeel B Patel</a></dd>
+  <dt>Prerequisites</dt><dd>Mathematics for ML, a prior ML course such as ES 654, and good Python programming (<a href="#prerequisites">details</a>)</dd>
+</dl>
+```
+:::
+
+::: {.next aria-labelledby="record-h"}
+```{=html}
+<span class="label" id="record-h">Course record</span>
+<p class="small" style="margin:0 0 12px">This offering ran from August to November 2022. Its slides, notebooks and assignments remain available.</p>
+<dl>
+  <dt>Lectures</dt><dd><span class="stat">23</span></dd>
+  <dt>Assignments</dt><dd><a href="assignments/index.html">4</a></dd>
+  <dt>Projects</dt><dd><a href="projects/index.html">14 ideas</a></dd>
+  <dt>Notebooks</dt><dd><a href="https://github.com/nipunbatra/pml2022/tree/main/notebooks">12, on GitHub</a></dd>
+</dl>
+<p class="all"><a href="assessment.html#deadlines">All dates</a></p>
+```
+:::
+
+:::
+
+```{=html}
+<section class="rule-top" id="lectures"><h2>Lectures</h2>
+<ul class="modules c4">
+  <li><span class="r">1–6</span><a href="schedule.html#introduction">Introduction to probabilistic ML</a><span class="c">6 lectures</span></li>
+  <li><span class="r">7–12</span><a href="schedule.html#approximate-inference">Approximate inference</a><span class="c">6 lectures</span></li>
+  <li><span class="r">13–14</span><a href="schedule.html#bayesian-neural-networks">Bayesian neural networks</a><span class="c">2 lectures</span></li>
+  <li><span class="r">15–16</span><a href="schedule.html#gaussian-processes">Gaussian processes</a><span class="c">2 lectures</span></li>
+  <li><span class="r">17–18</span><a href="schedule.html#unsupervised-learning">Unsupervised learning</a><span class="c">2 lectures</span></li>
+  <li><span class="r">19–20</span><a href="schedule.html#active-learning">Active learning and Bayesian optimisation</a><span class="c">2 lectures</span></li>
+  <li><span class="r">21–23</span><a href="schedule.html#generative-models">Autoencoders, hierarchical and generative models</a><span class="c">3 lectures</span></li>
+  <li><span class="r">+</span><a href="schedule.html#additional-material">Additional material</a><span class="c">1 topic</span></li>
+</ul>
+<div class="playlists">
+  <a class="btn solid" href="schedule.html">All 23 lectures</a>
+</div>
+</section>
+
+<div class="two rule-top">
+<section id="faq"><h2>Questions</h2>
+<details class="q" id="contents"><summary>What does the course cover?</summary>
+<ul>
+  <li><b>Probability refresher:</b> probability theory, discrete and continuous distributions, joint distributions, sampling from different distributions (for example with the Box–Muller transform), uncertainty modelling, and information-theoretic concepts such as KL divergence and entropy.</li>
+  <li><b>Bayesian concept learning:</b> likelihood, prior and posterior; maximum likelihood (MLE) and maximum a posteriori (MAP) estimation; full Bayesian estimation with conjugate priors (the Beta–Bernoulli model for a coin toss, the Normal–Normal model for the parameters of a Normal distribution).</li>
+  <li><b>Bayesian supervised methods:</b> for regression, Bayesian linear regression and robust linear regression through alternative likelihoods (Laplace, Student-t); for classification, Bayesian logistic regression and Bayesian naive Bayes.</li>
+  <li><b>Latent-variable modelling:</b> Gaussian mixture models and probabilistic principal component analysis (PPCA).</li>
+  <li><b>Approximate inference:</b> sampling (rejection sampling, importance sampling, Markov chain Monte Carlo, Metropolis–Hastings, Gibbs sampling, the No-U-Turn Sampler) and variational inference (mean field, the evidence lower bound, the reparameterisation trick, stochastic VI, automatic differentiation VI).</li>
+  <li><b>Gaussian processes:</b> the multivariate Normal distribution and its properties, kernels, GP regression and classification, approximate inference and sparse GPs.</li>
+  <li><b>Bayesian optimisation and active learning:</b> query by committee, uncertainty sampling, expected model change; acquisition functions, GP-based and random-forest-based Bayesian optimisation.</li>
+  <li><b>Probabilistic deep learning:</b> MC dropout, deep ensembles, Bayesian neural networks and deep GPs.</li>
+</ul></details>
+<details class="q" id="prerequisites"><summary>What should I know before the course?</summary>
+<ul>
+  <li>Mathematics for ML: the recommended reading is the <a href="https://mml-book.github.io">Mathematics for Machine Learning</a> book.</li>
+  <li>A prior ML course: ES 654 at IIT Gandhinagar or equivalent.</li>
+  <li>Good programming skills in Python and familiarity with NumPy, pandas, Matplotlib and scikit-learn. The recommended reading is the <a href="https://jakevdp.github.io/PythonDataScienceHandbook/">Python Data Science Handbook</a>.</li>
+</ul></details>
+<details class="q" id="grading"><summary>How is the course graded?</summary><p>Assignments 20%, quizzes 20% and the project 60%. Each quiz covers everything from the previous quiz up to the day of the quiz. See <a href="assessment.html">Assessment</a>.</p></details>
+<details class="q" id="assignments"><summary>How are assignments done?</summary><p>In groups of two, as a single Jupyter notebook, using TensorFlow Probability with the JAX substrate for distributions and JAX for automatic differentiation and vectorised code. Draw insights from your results rather than only presenting answers. See <a href="assignments/index.html">Assignments</a>.</p></details>
+<details class="q" id="project"><summary>Is there a project?</summary><p>Yes, and it is worth 60% of the grade. The <a href="projects/index.html">Projects</a> page lists ideas, from Bayesian unlearning and Stein variational inference to deep GPs and neural processes for energy disaggregation and air quality.</p></details>
+</section>
+<section id="references"><h2>References</h2>
+<p class="small muted">Textbooks:</p>
+<ul class="refs">
+  <li>Kevin P. Murphy, <i>Machine Learning: A Probabilistic Perspective</i>, MIT Press, 2012</li>
+  <li>Kevin P. Murphy, <i>Probabilistic Machine Learning: An Introduction</i>, MIT Press, 2022</li>
+  <li>Kevin P. Murphy, <i>Probabilistic Machine Learning: Advanced Topics</i>, MIT Press, 2023</li>
+  <li>Christopher M. Bishop, <i>Pattern Recognition and Machine Learning</i></li>
+  <li>Allen B. Downey, <i>Think Bayes: Bayesian Statistics in Python</i>, Green Tea Press, 2012</li>
+  <li>David Barber, <i>Bayesian Reasoning and Machine Learning</i>, Cambridge University Press, 2012</li>
+  <li>Carl Edward Rasmussen and Christopher K. I. Williams, <i>Gaussian Processes for Machine Learning</i>, MIT Press, 2006</li>
+  <li>Richard McElreath, <i>Statistical Rethinking</i>, CRC Press, 2020</li>
+</ul>
+<p class="small muted" style="margin-top:14px">Similar courses:</p>
+<ul class="refs">
+  <li><a href="https://www.cse.iitk.ac.in/users/piyush/courses/pml_winter16/PML.html">Probabilistic Machine Learning</a> by Piyush Rai, IIT Kanpur</li>
+</ul>
+<p class="small muted" style="margin-top:14px">YouTube channels and playlists:</p>
+<ul class="refs">
+  <li><a href="https://www.youtube.com/user/mathematicalmonk">mathematicalmonk</a></li>
+  <li><a href="https://www.youtube.com/c/MutualInformation0">Mutual Information</a></li>
+  <li><a href="https://www.youtube.com/c/ritvikmath">ritvikmath</a></li>
+  <li><a href="https://www.youtube.com/c/MachineLearningSimulation">Machine Learning &amp; Simulation</a></li>
+  <li><a href="https://www.youtube.com/watch?v=UbaVGD4Lfis&amp;list=PL05umP7R6ij1tHaOFY96m5uX3J21a6yNd">Probabilistic Machine Learning</a> by Philipp Hennig, University of Tübingen, 2021</li>
+  <li><a href="https://www.youtube.com/watch?v=BYUykHScxj8&amp;list=PLDcUM9US4XdMROZ57-OIRtIK0aOynbgZN">Statistical Rethinking 2022</a> by Richard McElreath</li>
+</ul>
+</section>
+</div>
+
+<section class="rule-top" id="people"><h2>Teaching assistant</h2>
+<ul class="people">
+  <li><a href="https://patel-zeel.github.io">Zeel B Patel</a><span class="muted">patel_zeel@iitgn.ac.in</span></li>
+</ul>
+</section>
+```

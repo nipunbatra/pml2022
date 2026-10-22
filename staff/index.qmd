@@ -1,0 +1,10 @@
+---
+title: "Staff"
+include-in-header:
+  text: |
+    <meta http-equiv="refresh" content="0; url=../index.html#people">
+    <link rel="canonical" href="https://nipunbatra.github.io/pml2022/index.html#people">
+    <meta name="robots" content="noindex">
+---
+
+This page has moved: [go to Home](/index.html#people).

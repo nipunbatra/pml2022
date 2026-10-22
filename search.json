@@ -1,0 +1,198 @@
+[
+  {
+    "objectID": "announcements/index.html",
+    "href": "announcements/index.html",
+    "title": "Announcements",
+    "section": "",
+    "text": "CS 691\n  IIT Gandhinagar\n  \n  \n    Home\n    Lectures\n    Assessment\n    Assignments\n    Projects\n  \n\n\n\n\n\n\nThis page has moved: go to Assessment."
+  },
+  {
+    "objectID": "schedule/index.html",
+    "href": "schedule/index.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "CS 691\n  IIT Gandhinagar\n  \n  \n    Home\n    Lectures\n    Assessment\n    Assignments\n    Projects\n  \n\n\n\n\n\n\nThis page has moved: go to Home."
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "CS 691\n  IIT Gandhinagar\n  \n  \n    Home\n    Lectures\n    Assessment\n    Assignments\n    Projects\n  \n\n\n\n\n\n\nProject ideas for the course. The project is worth 60% of the grade.\n\nImplement Bayesian unlearning\nBayesian neural network pruning: study the accuracy and calibration of pruned BNN models\nImplement Stein variational inference in JAX\nAutomatic kernel combinations for GPs\nDeep GPs for energy disaggregation\nDeep GPs for air quality\nBayesian neural networks for air quality\nActive learning for energy disaggregation\nBayesian air-quality forecasting\nImplement techniques from the Laplace Redux paper in BiJAX\nHow good is the automatic differentiation Laplace approximation (the Laplace approximation with a change of variables)?\nHow good is a low-rank VI approximation? Check on standard UCI datasets using BiJAX or your own code.\nConditional neural processes for energy disaggregation\nConditional neural processes for air quality"
+  },
+  {
+    "objectID": "assignments/3.html",
+    "href": "assignments/3.html",
+    "title": "Assignment 3",
+    "section": "",
+    "text": "CS 691\n  IIT Gandhinagar\n  \n  \n    Home\n    Lectures\n    Assessment\n    Assignments\n    Projects\nDue 15 September 2022, 6:00 pm · 4 marks. All assignments"
+  },
+  {
+    "objectID": "assignments/3.html#instructions",
+    "href": "assignments/3.html#instructions",
+    "title": "Assignment 3",
+    "section": "Instructions",
+    "text": "Instructions\n\nTotal marks: 4\nUse TensorFlow Probability (TFP) with the JAX substrate for distributions\nUse JAX for autograd functionality and vector programming\nThe assignment has to be done in groups of two\nThe assignment should be a single Jupyter notebook.\nIt is important that you are able to get insights from your results and not just present answers. As an example – if the question asks you to try a different likelihood, then you should be able to observe how this likelihood compares to the default likelihood."
+  },
+  {
+    "objectID": "assignments/3.html#dataset",
+    "href": "assignments/3.html#dataset",
+    "title": "Assignment 3",
+    "section": "Dataset",
+    "text": "Dataset\nCreate the following dataset to be used in the following questions\nfrom sklearn.datasets import make_classification\nimport numpy as np\nX, y = make_classification(\n    n_features=2, n_redundant=0, n_informative=2, random_state=1, n_clusters_per_class=1\n)\nrng = np.random.RandomState(2)\nX += 2 * rng.uniform(size=X.shape)"
+  },
+  {
+    "objectID": "assignments/3.html#questions",
+    "href": "assignments/3.html#questions",
+    "title": "Assignment 3",
+    "section": "Questions",
+    "text": "Questions\nFor all of the following questions, please consider binary classification as the model.\n\nFind the approximate posterior distribution using the Laplace approximation. Use a \\(p(\\theta) = \\mathcal{N}(0, b^2 I)\\) prior [1 mark]\nUsing the above Laplace approximation for the posterior distribution, find the predictive posterior distribution using MC sampling [1 mark]\nUse probit approximation to find the closed form distribution for the posterior [1 mark]\nUsing the above, find the closed form posterior predictive using probit approximation and compare against the MC sampling + Laplace approximation. [1 mark]"
+  },
+  {
+    "objectID": "assignments/3.html#references",
+    "href": "assignments/3.html#references",
+    "title": "Assignment 3",
+    "section": "References",
+    "text": "References\n\nhttps://www.tensorflow.org/probability/api_docs/python/tfp/distributions/ProbitBernoulli\nhttps://www.cse.iitk.ac.in/users/piyush/courses/tpmi_winter19/tpmi_w19_lec7_slides_print.pdf"
+  },
+  {
+    "objectID": "assignments/1.html",
+    "href": "assignments/1.html",
+    "title": "Assignment 1",
+    "section": "",
+    "text": "CS 691\n  IIT Gandhinagar\n  \n  \n    Home\n    Lectures\n    Assessment\n    Assignments\n    Projects\nDue Wednesday 10 August 2022, 6:00 pm · 5 marks. All assignments"
+  },
+  {
+    "objectID": "assignments/1.html#instructions",
+    "href": "assignments/1.html#instructions",
+    "title": "Assignment 1",
+    "section": "Instructions",
+    "text": "Instructions\n\nTotal marks: 5\nUse TensorFlow Probability (TFP) with the JAX substrate for distributions\nUse JAX for autograd functionality and vector programming\nThe assignment has to be done in groups of two\nThe assignment should be a single Jupyter notebook."
+  },
+  {
+    "objectID": "assignments/1.html#questions",
+    "href": "assignments/1.html#questions",
+    "title": "Assignment 1",
+    "section": "Questions",
+    "text": "Questions\n\nOptimise the following function using JAX autograd and gradient descent, \\(f(\\theta) = (\\theta_0 - 2)^2 + (\\theta_1 - 3)^2\\) [0.5 marks]\nGenerate some data (100 data points) using a univariate Normal distribution with loc=2.0 and scale=4.0.\n\nPlot a 2d contour plot showing the Likelihood or the Log-Likelihood as a function of loc and scale [1 mark]\nFind the MLE parameters for the loc and scale using gradient descent. [1 mark]\nRedo the above question but learn log(scale) instead of scale and then finally transform to learn scale. What can you conclude? Why is this transformation useful? [0.5 mark]\n\nGenerate some data (1000 data points) using a univariate Normal distribution with loc=2.0 and scale=4.0 and using Student-t distributions with varying degrees of freedom (1000 data points corresponding to each degree of freedom). Plot the pdf (and logpdf) at uniformly spaced data from (-50, 50) in steps of 0.1. What can you conclude? [1 mark]\nAnalytically derive the MLE for exponential distribution. Generate some data (1000 data points) using some fixed parameter values and see if you can recover the analytical parameters using gradient descent based solution for obtaining MLE. [1 mark]"
+  },
+  {
+    "objectID": "assessment.html",
+    "href": "assessment.html",
+    "title": "Assessment",
+    "section": "",
+    "text": "CS 691\n  IIT Gandhinagar\n  \n  \n    Home\n    Lectures\n    Assessment\n    Assignments\n    Projects\nGrading and every dated event of the August–November 2022 offering in one place. The project carries the most weight; assignments are programming tasks done in pairs."
+  },
+  {
+    "objectID": "assessment.html#deadlines",
+    "href": "assessment.html#deadlines",
+    "title": "Assessment",
+    "section": "Dates",
+    "text": "Dates\n\n\n\n\n\nDate\nEvent\n\n\n\n\n02 Aug 22\nFirst class\n\n\n10 Aug 22, 6:00 pm\nAssignment 1 due\n\n\n23 Aug 22, 6:00 pm\nAssignment 2 due\n\n\n02 Sep 22\nQuiz 1\n\n\n15 Sep 22, 6:00 pm\nAssignment 3 due\n\n\n27 Oct 22, 6:00 pm\nAssignment 4 due"
+  },
+  {
+    "objectID": "assessment.html#grading",
+    "href": "assessment.html#grading",
+    "title": "Assessment",
+    "section": "Grading",
+    "text": "Grading\n\nComponentWeightHow\n\nProject60%See the project ideas.\nAssignments20%Four programming assignments, each a single Jupyter notebook done in a group of two.\nQuizzes20%Each quiz covers everything from the previous quiz up to the day of the quiz.\nTotal100%"
+  },
+  {
+    "objectID": "assessment.html#assignments",
+    "href": "assessment.html#assignments",
+    "title": "Assessment",
+    "section": "Assignments",
+    "text": "Assignments\n\nAssignmentTopicMarksDue\n\nAssignment 1Gradient descent with JAX; maximum likelihood for Normal, Student-t and exponential distributions510 Aug, 6:00 pm\nAssignment 2MLE and MAP for linear and logistic regression; Normal, Laplace and Student-t choices623 Aug, 6:00 pm\nAssignment 3Laplace approximation, Monte Carlo and probit approximation for logistic regression415 Sep, 6:00 pm\nAssignment 4CNNs with MC dropout in Flax; Gaussian processes on the Mauna Loa CO2 data527 Oct, 6:00 pm\n\nThe common rules are on the Assignments page."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Probabilistic Machine Learning",
+    "section": "",
+    "text": "CS 691\n  IIT Gandhinagar\n  \n  \n    Home\n    Lectures\n    Assessment\n    Assignments\n    Projects\n  \n\n\n\n\n\n\n\n\n\nProbabilistic Machine Learning\nCS 691 · IIT Gandhinagar · Semester I, 2022–23\nThis course treats machine learning as inference under uncertainty. It moves from Bayes' rule, maximum likelihood and MAP estimation through approximate inference (Laplace, Monte Carlo, MCMC and variational methods) to Bayesian neural networks, Gaussian processes, latent-variable models, active learning, Bayesian optimisation and diffusion models. Assignments are written in JAX with TensorFlow Probability, and a project carries most of the grade.\n\n  InstructorProf. Nipun Batra\n  Emailnipun.batra@iitgn.ac.in\n  ClassesThursday, 12:00–1:30 pm, 7/102; Friday, 2:00–3:30 pm, 7/105\n  Google ClassroomClass code u7jjtu2\n  Teaching assistantZeel B Patel\n  PrerequisitesMathematics for ML, a prior ML course such as ES 654, and good Python programming (details)\n\n\n\nCourse record\nThis offering ran from August to November 2022. Its slides, notebooks and assignments remain available.\n\n  Lectures23\n  Assignments4\n  Projects14 ideas\n  Notebooks12, on GitHub\n\nAll dates\n\n\nLectures\n\n  1–6Introduction to probabilistic ML6 lectures\n  7–12Approximate inference6 lectures\n  13–14Bayesian neural networks2 lectures\n  15–16Gaussian processes2 lectures\n  17–18Unsupervised learning2 lectures\n  19–20Active learning and Bayesian optimisation2 lectures\n  21–23Autoencoders, hierarchical and generative models3 lectures\n  +Additional material1 topic\n\n\n  All 23 lectures\n\n\n\n\nQuestions\nWhat does the course cover?\n\n  Probability refresher: probability theory, discrete and continuous distributions, joint distributions, sampling from different distributions (for example with the Box–Muller transform), uncertainty modelling, and information-theoretic concepts such as KL divergence and entropy.\n  Bayesian concept learning: likelihood, prior and posterior; maximum likelihood (MLE) and maximum a posteriori (MAP) estimation; full Bayesian estimation with conjugate priors (the Beta–Bernoulli model for a coin toss, the Normal–Normal model for the parameters of a Normal distribution).\n  Bayesian supervised methods: for regression, Bayesian linear regression and robust linear regression through alternative likelihoods (Laplace, Student-t); for classification, Bayesian logistic regression and Bayesian naive Bayes.\n  Latent-variable modelling: Gaussian mixture models and probabilistic principal component analysis (PPCA).\n  Approximate inference: sampling (rejection sampling, importance sampling, Markov chain Monte Carlo, Metropolis–Hastings, Gibbs sampling, the No-U-Turn Sampler) and variational inference (mean field, the evidence lower bound, the reparameterisation trick, stochastic VI, automatic differentiation VI).\n  Gaussian processes: the multivariate Normal distribution and its properties, kernels, GP regression and classification, approximate inference and sparse GPs.\n  Bayesian optimisation and active learning: query by committee, uncertainty sampling, expected model change; acquisition functions, GP-based and random-forest-based Bayesian optimisation.\n  Probabilistic deep learning: MC dropout, deep ensembles, Bayesian neural networks and deep GPs.\n\nWhat should I know before the course?\n\n  Mathematics for ML: the recommended reading is the Mathematics for Machine Learning book.\n  A prior ML course: ES 654 at IIT Gandhinagar or equivalent.\n  Good programming skills in Python and familiarity with NumPy, pandas, Matplotlib and scikit-learn. The recommended reading is the Python Data Science Handbook.\n\nHow is the course graded?Assignments 20%, quizzes 20% and the project 60%. Each quiz covers everything from the previous quiz up to the day of the quiz. See Assessment.\nHow are assignments done?In groups of two, as a single Jupyter notebook, using TensorFlow Probability with the JAX substrate for distributions and JAX for automatic differentiation and vectorised code. Draw insights from your results rather than only presenting answers. See Assignments.\nIs there a project?Yes, and it is worth 60% of the grade. The Projects page lists ideas, from Bayesian unlearning and Stein variational inference to deep GPs and neural processes for energy disaggregation and air quality.\n\nReferences\nTextbooks:\n\n  Kevin P. Murphy, Machine Learning: A Probabilistic Perspective, MIT Press, 2012\n  Kevin P. Murphy, Probabilistic Machine Learning: An Introduction, MIT Press, 2022\n  Kevin P. Murphy, Probabilistic Machine Learning: Advanced Topics, MIT Press, 2023\n  Christopher M. Bishop, Pattern Recognition and Machine Learning\n  Allen B. Downey, Think Bayes: Bayesian Statistics in Python, Green Tea Press, 2012\n  David Barber, Bayesian Reasoning and Machine Learning, Cambridge University Press, 2012\n  Carl Edward Rasmussen and Christopher K. I. Williams, Gaussian Processes for Machine Learning, MIT Press, 2006\n  Richard McElreath, Statistical Rethinking, CRC Press, 2020\n\nSimilar courses:\n\n  Probabilistic Machine Learning by Piyush Rai, IIT Kanpur\n\nYouTube channels and playlists:\n\n  mathematicalmonk\n  Mutual Information\n  ritvikmath\n  Machine Learning & Simulation\n  Probabilistic Machine Learning by Philipp Hennig, University of Tübingen, 2021\n  Statistical Rethinking 2022 by Richard McElreath\n\n\n\n\nTeaching assistant\n\n  Zeel B Patelpatel_zeel@iitgn.ac.in"
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Lectures",
+    "section": "",
+    "text": "CS 691\n  IIT Gandhinagar\n  \n  \n    Home\n    Lectures\n    Assessment\n    Assignments\n    Projects\n  \n\n\n\n\n\n\n\nEvery class of the August–November 2022 offering, numbered in order, with its slides, notes and notebooks. Labs were hands-on sessions; their notebooks open in Colab.\nNotesSlidesFull recordingNotebookInteractive labReading\nIntroduction to probabilistic ML1–6Approximate inference7–12Bayesian neural networks13–14Gaussian processes15–16Unsupervised learning17–18Active learning and Bayesian optimisation19–20Autoencoders, hierarchical and generative models21–23Additional material\n\nIntroduction to probabilistic MLLectures 1–6\n\nLecture 01Bayes rule and course logistics\nSlidesNotebook\nLecture 02Lab: distributions in TFP and coin-toss MLE\nColab notebook\nLecture 03Linear regression: maximum likelihood\nSlides\nLecture 04Logistic regression MLE; coin toss and linear regression MAP\n\nLecture 05Maximum a posteriori estimation\nSlides\nLecture 06Lab: Bayesian linear regression in closed form\nColab notebook\n\n\nApproximate inferenceLectures 7–12\n\nLecture 07Laplace approximation\nNotesSlides\nLecture 08Monte Carlo sampling\nNotesSlides\nLecture 09Monte Carlo sampling, continuedQuiz 1 was held in this class.\n\nLecture 10Rejection sampling\nVideoColab notebook\nLecture 11MCMC I: Metropolis–Hastings\nColab notebook\nLecture 12Variational inference\n\n\n\nBayesian neural networksLectures 13–14\n\nLecture 13MC dropout and deep ensembles\nNotebook\nLecture 14Variational inference and MCMC for neural networks\n\n\n\nGaussian processesLectures 15–16\n\nLecture 15Gaussian processes\nSlides: Richard TurnerSlides: Marc DeisenrothReading: A visual exploration of Gaussian processes (Distill)Blog: Gaussian processesBlog: Learning GP parametersVideo: Richard TurnerVideo: Marc DeisenrothDemo 1: GP regressionDemo 2: GP playgroundDemo 3: VizGP\nLecture 16Gaussian processes in code\nNotebook\n\n\nUnsupervised learningLectures 17–18\n\nLecture 17Gaussian mixture models\n\nLecture 18Probabilistic PCA\n\n\n\nActive learning and Bayesian optimisationLectures 19–20\n\nLecture 19Active learning\n\nLecture 20Bayesian optimisation\nNotebook\n\n\nAutoencoders, hierarchical and generative modelsLectures 21–23\n\nLecture 21Autoencoders\n\nLecture 22Hierarchical modelling\nNotebook\nLecture 23Diffusion models\nSlides\n\n\nAdditional material1 topic \n\n·Further slides and notebooksCourse files not tied to a single class.\nSlides: KL divergenceSlides: MCMCNotes: MCMCNotebook: KL divergenceNotebook: Taylor seriesNotebook: Bayesian linear regression\n\n\n\nClasses without links had no material posted on the course site."
+  },
+  {
+    "objectID": "assignments/index.html",
+    "href": "assignments/index.html",
+    "title": "Assignments",
+    "section": "",
+    "text": "CS 691\n  IIT Gandhinagar\n  \n  \n    Home\n    Lectures\n    Assessment\n    Assignments\n    Projects\nFour programming assignments, together worth 20% of the grade. Each is due at 6:00 pm on the date shown."
+  },
+  {
+    "objectID": "assignments/index.html#rules-for-every-assignment",
+    "href": "assignments/index.html#rules-for-every-assignment",
+    "title": "Assignments",
+    "section": "Rules for every assignment",
+    "text": "Rules for every assignment\n\nUse TensorFlow Probability (TFP) with the JAX substrate for distributions.\nUse JAX for automatic differentiation and vectorised code.\nWork in groups of two.\nSubmit a single Jupyter notebook.\nDraw insights from your results rather than only presenting answers. For example, if a question asks you to try a different likelihood, observe how it compares with the default likelihood."
+  },
+  {
+    "objectID": "assignments/2.html",
+    "href": "assignments/2.html",
+    "title": "Assignment 2",
+    "section": "",
+    "text": "CS 691\n  IIT Gandhinagar\n  \n  \n    Home\n    Lectures\n    Assessment\n    Assignments\n    Projects\nDue Tuesday 23 August 2022, 6:00 pm · 6 marks. All assignments"
+  },
+  {
+    "objectID": "assignments/2.html#instructions",
+    "href": "assignments/2.html#instructions",
+    "title": "Assignment 2",
+    "section": "Instructions",
+    "text": "Instructions\n\nTotal marks: 6\nUse TensorFlow Probability (TFP) with the JAX substrate for distributions\nUse JAX for autograd functionality and vector programming\nThe assignment has to be done in groups of two\nThe assignment should be a single Jupyter notebook.\nIt is important that you are able to get insights from your results and not just present answers. As an example – if the question asks you to try a different likelihood, then you should be able to observe how this likelihood compares to the default likelihood."
+  },
+  {
+    "objectID": "assignments/2.html#dataset",
+    "href": "assignments/2.html#dataset",
+    "title": "Assignment 2",
+    "section": "Dataset",
+    "text": "Dataset\nCreate the following datasets to be used in the following questions\n\nDataset 1\n\nimport jax.numpy as jnp\nimport jax\nx = jnp.linspace(-2, 2, 100)\nf = 3*x + 2.0\neps = 0.5*jax.random.normal(key=jax.random.PRNGKey(0), shape=(100, ))\ny = f + eps\n\nDataset 2\n\nimport jax.numpy as jnp\nimport jax\nx = jnp.linspace(-2, 2, 100)\nf = 3*x + 2.0\neps = 0.5*jax.random.normal(key=jax.random.PRNGKey(0), shape=(100, ))\ny = f + eps\ny = y.at[1].set(y[1] + 3)\ny = y.at[30].set(y[30] + 1)\n\nDataset 3\n\nfrom sklearn.datasets import make_classification\nimport numpy as np\nX, y = make_classification(\n    n_features=2, n_redundant=0, n_informative=2, random_state=1, n_clusters_per_class=1\n)\nrng = np.random.RandomState(2)\nX += 2 * rng.uniform(size=X.shape)"
+  },
+  {
+    "objectID": "assignments/2.html#questions",
+    "href": "assignments/2.html#questions",
+    "title": "Assignment 2",
+    "section": "Questions",
+    "text": "Questions\n\nAssume scale=1 for the likelihood noise, learn the MLE parameters for Dataset 1 assuming Normal likelihood. [0.5 marks]\nAssume scale=1 for the likelihood noise, learn the MLE parameters for Dataset 2 assuming Normal likelihood. [0.5 marks]\nLearn the MLE parameters for Dataset 1 assuming Normal likelihood. Do not assume scale and also estimate it using MLE. You may prefer to learn log(scale) as a part of your optimisation procedure. Plot predicted function along with two scale (\\(\\mu \\pm 2\\sigma\\)) band to show likelihood noise. [0.5 marks]\nRepeat question 3 for Dataset 2. [0.5 marks]\nAssume scale=1 for the likelihood noise, learn the MAP parameters for Dataset 1 assuming Normal likelihood and a Normal prior: \\(p(\\theta) = \\mathcal{N}(0, b^2 I)\\). Show the effect of varying b on the MAP parameters and the learnt function. [1 mark]\nRepeat question 5, but instead of Normal prior choose a Laplace prior [0.5 marks]\nRepeat question 3 for Dataset 2 but instead of Normal likelihood, Student-t likelihood with varying degrees of freedom. You should manually vary the degree of freedom in a range (you should choose the range based on the insights). [1 mark]\nImplement Logistic regression using Bernoulli likelihood and learn the MLE and MAP parameters for Dataset 3. For MAP, assume normal prior. Also plot contours/surfaces of predictive mean and variance.[1.5 marks]"
+  },
+  {
+    "objectID": "assignments/4.html",
+    "href": "assignments/4.html",
+    "title": "Assignment 4",
+    "section": "",
+    "text": "CS 691\n  IIT Gandhinagar\n  \n  \n    Home\n    Lectures\n    Assessment\n    Assignments\n    Projects\nDue 27 October 2022, 6:00 pm · 5 marks. All assignments"
+  },
+  {
+    "objectID": "assignments/4.html#instructions",
+    "href": "assignments/4.html#instructions",
+    "title": "Assignment 4",
+    "section": "Instructions",
+    "text": "Instructions\n\nTotal marks: 5\nUse TensorFlow Probability (TFP) with the JAX substrate for distributions\nUse JAX for autograd functionality and vector programming\nThe assignment has to be done in groups of two\nThe assignment should be a single Jupyter notebook.\nIt is important that you are able to get insights from your results and not just present answers. As an example – if the question asks you to try a different likelihood, then you should be able to observe how this likelihood compares to the default likelihood."
+  },
+  {
+    "objectID": "assignments/4.html#questions",
+    "href": "assignments/4.html#questions",
+    "title": "Assignment 4",
+    "section": "Questions",
+    "text": "Questions\nFor all of the following questions, please consider binary classification as the model.\n\nUse a subset of 5,000 images (500 images per class) from MNIST dataset and train a simple (deterministic)CNN model in Flax. Report the predicted accuracy on a separately kept 1,000 images test set (100 images per class). Also, report the predicted probabilities for wrongly classified examples. What can you conclude? Now, use the trained model on a set of 1,000 images on Fashion MNIST dataset. What can you conclude? [1.5 marks]\nModify the above CNN to include MC dropout as way to get uncertainty from the final dense layer. Rerun above experiments and report conclusions. [2 marks]\nUse a GP library of your choice and kernel of your choice to fit a GP to monthly CO₂ data from Mauna Loa. Compare the prediction with a neural network that uses MC Dropout to obtain uncertainty. [1.5 marks]"
+  },
+  {
+    "objectID": "calendar/index.html",
+    "href": "calendar/index.html",
+    "title": "Calendar",
+    "section": "",
+    "text": "CS 691\n  IIT Gandhinagar\n  \n  \n    Home\n    Lectures\n    Assessment\n    Assignments\n    Projects\n  \n\n\n\n\n\n\nThis page has moved: go to Lectures."
+  },
+  {
+    "objectID": "staff/index.html",
+    "href": "staff/index.html",
+    "title": "Staff",
+    "section": "",
+    "text": "CS 691\n  IIT Gandhinagar\n  \n  \n    Home\n    Lectures\n    Assessment\n    Assignments\n    Projects\n  \n\n\n\n\n\n\nThis page has moved: go to Home."
+  }
+]
